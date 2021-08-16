@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
 
 :root{
     --primary-color : #ce93d8;
@@ -34,17 +34,30 @@ body{
 
  h1
 { background-color: var(--secondary-color); padding: 2rem; border-radius:1rem ; -webkit-border-radius:1rem ; -moz-border-radius:1rem ; -ms-border-radius:1rem ; -o-border-radius:1rem ;
+
+font-size: 2.5rem;
+
+font-family: 'Russo One', sans-serif;
 }
 
-h1, p{
+hr
+{
+color: black;
+
+}
+
+h1, h3{
     color: rgb(20, 19, 19);
     font-weight: bold;
 } 
+
+
  label{
     font-size: 1.3rem;
     
  
-    color: var(--secondary-color) ;
+    color: #2F3232;
+   
 
     margin-top: 3rem;
 } 
@@ -107,3 +120,15 @@ table{
 th,td{
     word-wrap: break-word;
 }  
+
+small
+{
+    padding: 1rem;
+    padding-left: 75rem;
+  
+    
+   
+    text-align: right;
+    color: cornsilk;
+
+}

@@ -14,9 +14,10 @@
     <section class="section">
         <h1>  Cash Register Manager 💲</h1>
        
-        <p>Enter the bill amount and cash given by the customer and know minimum number of notes to return.</p>
+        <h2>Enter the bill amount and cash given by the customer and know minimum number of notes to return.</h2>
+        <hr>
         <div>
-           <label for="billAmt"> Bill Amount:</label>
+          <h2> <label for="billAmt"> Bill Amount:</label> </h2>
            
             <input type="number" id="billAmt" /> 
 
@@ -24,18 +25,22 @@
         </div>
 
         
-            <label for="cash-given">Cash Given:</label> 
+           <h2><label for="cash-given">  Cash Given:</label> </h2> 
 
             <input type="number" id="cash-given" />
 
             <button id="checkBtn">Check</button> 
+            <hr>
        
         <p id="errorMsg">
 
         </p>
+
+       
+
   <div class="changeReturn">
       
-            <label>Return Change:</label>
+          <h2 id="return-change"> <label>Return Change:</label> </h2> 
            
             <div id="output">
                 <table>
@@ -64,6 +69,9 @@
             </div>
           
     </section>
+
+
+<small>Developed with ❤️ by <b> Raghav </b></small>
 
     <script src="app.js"></script>
 </body>
