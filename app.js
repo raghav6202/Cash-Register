@@ -28,9 +28,9 @@ checkButton.addEventListener("click", function checkBillAndCash()
 
 //done to clear the msg after changing the value
 
-if(Number(billAmount.value) > 0)
+if((billAmount.value) > 0)
 {
-if(Number(cashGiven.value) >= Number(billAmount.value))
+if((cashGiven.value) >= (billAmount.value))
 {
 const amountToBeReturned = cashGiven.value - billAmount.value;
 
