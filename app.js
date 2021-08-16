@@ -13,7 +13,7 @@ const cashGivenDiv = document.querySelector(".cashGivenInput")
 
 const noOfNotes = document.querySelectorAll(".noOf-Notes");
 
-const availableDenominations = [2000 ,500 ,100 ,20 ,5 ,1];
+const availableDenominations = [2000 ,500 ,100 ,20, 10 ,5 ,1];
 
 
 
