@@ -2,9 +2,14 @@ const billAmount = document.querySelector("#billAmt");
 
 const cashGiven = document.querySelector("#cash-given");
 
+
 const checkButton = document.querySelector("#checkBtn");
 
 const message = document.querySelector("#errorMsg");
+
+const nextBtn = document.querySelector("#nextBtn");
+
+const cashGivenDiv = document.querySelector(".cashGivenInput")
 
 const noOfNotes = document.querySelectorAll(".noOf-Notes");
 
@@ -14,15 +19,18 @@ const availableDenominations = [2000 ,500 ,100 ,20 ,5 ,1];
 
 //-----------------------------------
 
+
+
+
 checkButton.addEventListener("click", function checkBillAndCash()
 {
-message.style.display = "none";
+    hideError();
 
 //done to clear the msg after changing the value
 
-if(billAmount.value > 0)
+if(Number(billAmount.value) > 0)
 {
-if(cashGiven.value >= billAmount.value  )
+if(Number(cashGiven.value) >= Number(billAmount.value))
 {
 const amountToBeReturned = cashGiven.value - billAmount.value;
 
@@ -42,6 +50,7 @@ else
 }
 
 });
+
 
 
 function calculateChange (amountToBeReturned)
@@ -66,4 +75,8 @@ function displayMessage(display)
 {
     message.style.display = "block"
     message.innerText = display; 
+}
+
+function hideError(){
+    message.style.display = "none";
 }
